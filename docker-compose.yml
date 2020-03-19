@@ -5,7 +5,7 @@ services:
     restart: always
     build: ./
     ports:
-      - "8888:8888" # django
+      - "8888:8888"
     volumes:
       - ./jupyter:/jupyter
     command: jupyter notebook --ip='*' --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
